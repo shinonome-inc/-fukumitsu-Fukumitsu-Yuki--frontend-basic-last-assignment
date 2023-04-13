@@ -1,17 +1,20 @@
+@use "../../variables" as *;
 .text-padding {
-  background-color: black;
+  background-color: $black;
   position: relative;
   transition: 0.2s;
+  width: 200px;
+  height: 55px;
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: $breakpoint-sm) {
     width: 180px;
     height: 45px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-md) {
     width: 150px;
     height: 55px;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $breakpoint-lg) {
     width: 200px;
     height: 55px;
   }
@@ -19,10 +22,9 @@
 
 a {
   font-family: "Noto Sans JP";
-  font-style: normal;
   font-weight: 400;
   text-align: center;
-  color: white;
+  color: $white;
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -35,8 +37,8 @@ a {
   justify-content: center;
 }
 a:hover {
-  color: white;
+  color: $white;
 }
 .text-padding:hover {
-  background-color: #442606;
+  background-color: $orange_bistre;
 }
