@@ -1,0 +1,57 @@
+@use "../../variables" as *;
+.message-up-padding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 327px;
+  height: 204px;
+  left: 24px;
+  top: 24px;
+}
+.message-up {
+  color: $black;
+  width: 287px;
+  height: 54px;
+  font-family: $fontfamily-mincho;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.small-up {
+  color: $black;
+  font-family: $fontfamily-gothic;
+  line-height: 36px;
+}
+.massage-low-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 200px;
+  height: 128px;
+  left: 87.5px;
+  top: 276px;
+}
+.message-low {
+  color: $black;
+  width: 160px;
+  height: 30px;
+  font-family: $fontfamily-mincho;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+}
+.small-low {
+  color: $black;
+  width: 84px;
+  height: 28px;
+  font-family: $fontfamily-gothic;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
