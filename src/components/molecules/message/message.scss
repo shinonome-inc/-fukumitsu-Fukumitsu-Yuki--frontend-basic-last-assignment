@@ -1,30 +1,32 @@
 @use "../../variables" as *;
-.message-up-padding {
-  position: absolute;
+.message-padding {
   padding: 52px 20px;
   @media screen and(max-width:$breakpoint-lg) {
     padding: 32px 20px;
   }
 }
-.message-up {
+.message {
   font-size: $fontsize-xl;
   color: $black;
   line-height: 1.5;
   font-family: $fontfamily-mincho;
   align-items: center;
-  position: relative;
   display: flex;
   flex-direction: column;
-  font-weight: 400;
-  margin-bottom: 10px;
+
   @media screen and (max-width: $breakpoint-lg) {
     font-size: $fontsize-l;
     line-height: 1.5;
     margin-bottom: 6px;
   }
 }
-.small-up {
-  font-weight: 400;
+.p {
+  margin-bottom: 10px;
+  @media screen and (max-width: $breakpoint-lg) {
+    margin-bottom: 6px;
+  }
+}
+.small {
   color: $black;
   font-family: $fontfamily-gothic;
   line-height: 2.6;
