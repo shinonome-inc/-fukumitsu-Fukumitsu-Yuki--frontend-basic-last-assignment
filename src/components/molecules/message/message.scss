@@ -25,15 +25,16 @@
       margin-bottom: 6px;
     }
   }
-}
-.small {
-  color: $black;
-  font-family: $fontfamily-gothic;
-  line-height: 2.6;
-  font-size: $fontsize-s;
-  margin-bottom: 0;
 
-  @media screen and (max-width: $breakpoint-lg) {
-    line-height: 2;
+  .small {
+    color: $black;
+    font-family: $fontfamily-gothic;
+    line-height: 2.6;
+    font-size: $fontsize-s;
+    margin-bottom: 0;
+
+    @media screen and (max-width: $breakpoint-lg) {
+      line-height: 2;
+    }
   }
 }
