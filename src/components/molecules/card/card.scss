@@ -32,6 +32,7 @@
   border-color: $white transparent transparent transparent;
 }
 .card-body {
+  position: relative;
   padding: 32px;
   background-color: $white_smoke;
 }
