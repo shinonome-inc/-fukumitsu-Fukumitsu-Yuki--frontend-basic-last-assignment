@@ -9,15 +9,18 @@
   color: $orange_bistre;
   z-index: 2;
 }
+.img-wrapper {
+  margin: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  @media screen and (max-width: $breakpoint-md) {
+    transition: none;
+  }
+}
 .img {
   margin: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  transition: 0.2s;
-  @media screen and (max-width: $breakpoint-md) {
-    transition: none;
-  }
 }
 .img:hover {
   transform: scale(1.2);
