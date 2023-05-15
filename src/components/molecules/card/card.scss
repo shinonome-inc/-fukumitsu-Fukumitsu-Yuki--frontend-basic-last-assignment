@@ -2,6 +2,7 @@
 .title {
   position: absolute;
   margin: 0;
+  margin-left: 6px;
   font-size: $fontsize-l;
   font-family: $fontfamily-gothic;
   font-weight: 700;
@@ -12,12 +13,9 @@
 .img-wrapper {
   margin: 0;
   overflow: hidden;
-  transition: 0.5s;
-  @media screen and (max-width: $breakpoint-md) {
-    transition: none;
-  }
 }
 .img {
+  transition: 0.5s ease;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -40,14 +38,11 @@
   background-color: $white_smoke;
 }
 .text {
-  font-style: $fontfamily-gothic;
-  font-weight: 400;
+  font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
   line-height: 2.4;
 }
 .module {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
