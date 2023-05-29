@@ -1,0 +1,59 @@
+@use "../../variables" as *;
+.plan {
+  padding: 0;
+
+  .header-box {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: $orange_zorba;
+    font-family: $fontfamily-gothic;
+    font-weight: 700;
+    font-size: $fontsize-l;
+    line-height: 29px;
+    color: white;
+    padding: 20px 200px;
+  }
+
+  .box-list1 {
+    background-color: $gray_desertStorm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0px;
+  }
+  .box-list1-text {
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-xxl;
+    font-weight: 700;
+    line-height: 58px;
+    color: $orange_bistre;
+    margin-top: 23px;
+    margin-bottom: 16px;
+  }
+  .box-list1-text::first-letter {
+    font-size: $fontsize-l;
+    line-height: 29px;
+    margin-right: 4px;
+  }
+  .box-list1-text-bottom {
+    font-size: $fontsize-s;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+
+  .box-list2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    border: 1px solid $gray_gainsboro;
+  }
+}
+
+.plan:nth-child(even) {
+  outline: 5px solid $orange_bistre;
+  outline-offset: -5px;
+  .header-box {
+    background-color: $orange_bistre;
+  }
+}
