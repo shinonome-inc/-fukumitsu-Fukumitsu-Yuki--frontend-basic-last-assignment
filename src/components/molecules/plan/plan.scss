@@ -12,7 +12,7 @@
     font-size: $fontsize-l;
     line-height: 29px;
     color: white;
-    padding: 20px 200px;
+    padding: 20px 0px;
   }
 
   .box-list1 {
@@ -28,7 +28,6 @@
     font-weight: 700;
     line-height: 58px;
     color: $orange_bistre;
-    margin-top: 23px;
     margin-bottom: 16px;
   }
   .box-list1-text::first-letter {
@@ -39,17 +38,21 @@
   .box-list1-text-bottom {
     font-size: $fontsize-s;
     line-height: 20px;
-    margin-bottom: 24px;
   }
 
   .box-list2 {
     display: flex;
     justify-content: center;
     padding: 20px 10px;
-    border: 1px solid $gray_gainsboro;
+    font-size: $fontsize-s;
+    border-top: 1px solid $gray_gainsboro;
+    border-right: 1px solid $gray_gainsboro;
+    border-left: 1px solid $gray_gainsboro;
   }
 }
-
+.box-list2:nth-child(6n) {
+  border-bottom: 1px solid $gray_gainsboro;
+}
 .plan:nth-child(even) {
   outline: 5px solid $orange_bistre;
   outline-offset: -5px;
