@@ -4,7 +4,11 @@
     color: $orange_bistre;
     transition: 0.2 ease;
   }
-  .news-box .box-list {
+  .news-box {
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+  .box-list {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -15,7 +19,7 @@
     border-top: 1px solid $gray_gainsboro;
     border-right: 1px solid $gray_gainsboro;
     border-left: 1px solid $gray_gainsboro;
-    &:nth-child(5n) {
+    &:last-child {
       border-bottom: 1px solid $gray_gainsboro;
     }
   }
