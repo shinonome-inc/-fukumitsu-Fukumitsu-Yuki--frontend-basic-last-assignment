@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+.news {
+  &:hover {
+    color: $orange_bistre;
+    transition: 0.2 ease;
+  }
+  .news-box .box-list {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    font-size: $fontsize-m;
+    line-height: 23px;
+    background-color: $white;
+    border-top: 1px solid $gray_gainsboro;
+    border-right: 1px solid $gray_gainsboro;
+    border-left: 1px solid $gray_gainsboro;
+    &:nth-child(5n) {
+      border-bottom: 1px solid $gray_gainsboro;
+    }
+  }
+  .box-list-date {
+    font-size: $fontsize-xs;
+    color: $gray_nobel;
+    margin-bottom: 10px;
+  }
+
+  .news-list-text {
+    float: right;
+    margin-top: 30px;
+  }
+}
