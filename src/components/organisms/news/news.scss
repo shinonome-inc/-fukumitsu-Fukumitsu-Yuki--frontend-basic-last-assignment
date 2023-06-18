@@ -1,14 +1,16 @@
 @use "../../variables" as *;
 .news {
-  &:hover {
-    color: $orange_bistre;
-    transition: 0.2 ease;
-  }
   .news-box {
     margin-bottom: 0px;
     padding-left: 0px;
+    list-style: none;
   }
   .box-list {
+    justify-content: flex-start;
+    text-align: left;
+    color: $black;
+    display: flex;
+    flex-direction: column;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -21,6 +23,10 @@
     border-left: 1px solid $gray_gainsboro;
     &:last-child {
       border-bottom: 1px solid $gray_gainsboro;
+    }
+    &:hover {
+      color: $orange_bistre;
+      transition: 0.2 ease;
     }
   }
   .box-list-date {
