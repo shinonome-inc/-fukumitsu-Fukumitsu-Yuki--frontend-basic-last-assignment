@@ -4,23 +4,15 @@
     margin-bottom: 0px;
     padding-left: 0px;
     list-style: none;
-  }
-  .box-list {
-    justify-content: flex-start;
-    text-align: left;
-    color: $black;
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 20px;
-    font-size: $fontsize-m;
-    line-height: 23px;
-    background-color: $white;
     border-top: 1px solid $gray_gainsboro;
     border-right: 1px solid $gray_gainsboro;
     border-left: 1px solid $gray_gainsboro;
+  }
+  .box-list {
+    min-width: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     &:last-child {
       border-bottom: 1px solid $gray_gainsboro;
     }
@@ -28,6 +20,14 @@
       color: $orange_bistre;
       transition: 0.2 ease;
     }
+  }
+  .box-list h6 {
+    color: $black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: $fontsize-m;
+    line-height: 23px;
   }
   .box-list-date {
     font-size: $fontsize-xs;
