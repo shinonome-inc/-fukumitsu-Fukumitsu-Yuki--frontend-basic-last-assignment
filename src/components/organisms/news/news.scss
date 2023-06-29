@@ -1,0 +1,43 @@
+@use "../../variables" as *;
+.news {
+  .news-box {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style: none;
+    border-top: 1px solid $gray_gainsboro;
+    border-right: 1px solid $gray_gainsboro;
+    border-left: 1px solid $gray_gainsboro;
+  }
+  .box-list {
+    min-width: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    &:last-child {
+      border-bottom: 1px solid $gray_gainsboro;
+    }
+    &:hover h6 {
+      color: $orange_bistre;
+      transition: 0.2 ease;
+    }
+  }
+  .box-list h6 {
+    color: $black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: $fontsize-m;
+    line-height: 23px;
+  }
+  .box-list-date {
+    font-size: $fontsize-xs;
+    line-height: 12px;
+    color: $gray_nobel;
+    margin-bottom: 10px;
+  }
+
+  .news-list-text {
+    float: right;
+    margin-top: 30px;
+  }
+}
