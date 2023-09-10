@@ -1,0 +1,37 @@
+@use "../../variables" as *;
+.img{
+   position: relative;
+}
+
+.top-img {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  @media (max-width: $breakpoint-lg) {
+    height: 360px;
+  }
+}
+.img p {
+  position: absolute;
+  writing-mode: vertical-rl;
+  top: 50%;
+  left: 50%;
+  color: $white;
+  font-family: $fontfamily-mincho;
+  transform: translate(-50%, -50%);
+  @media (min-width: $breakpoint-lg) {
+    font-size: $fontsize-l;
+  }
+}
+.top-text {
+  background-color: $black;
+  
+  .message .message-title {
+    color: $white;
+    text-align: center;
+  }
+  .message .small {
+    color: $white;
+    text-align: center;
+  }
+}
