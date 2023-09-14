@@ -1,5 +1,5 @@
 @use "../../variables" as *;
-.img{
+.img-wrapper{
    position: relative;
 }
 
@@ -11,7 +11,7 @@
     height: 360px;
   }
 }
-.img p {
+.img-wrapper p {
   position: absolute;
   writing-mode: vertical-rl;
   top: 50%;
