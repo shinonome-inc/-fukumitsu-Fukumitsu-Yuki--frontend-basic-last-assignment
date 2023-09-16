@@ -1,23 +1,23 @@
 @use "../../variables" as *;
 .about {
   padding: 100px 0px;
+  max-width: 960px;
 
   @media (max-width: $breakpoint-lg) {
     padding: 40px 100px;
   }
-}
+  .img-wrapper .col-6 {
+    padding: 0;
+  }
 
-.img-wrapper .col-6 {
-  padding: 0;
-}
-
-.about-text {
-  background-color: $white_smoke;
-}
-.message .message-title {
-  text-align: center;
-  color: $orange_bistre;
-}
-.message .small {
-  text-align: center;
+  .about-text {
+    background-color: $white_smoke;
+  }
+  .message .message-title {
+    text-align: center;
+    color: $orange_bistre;
+  }
+  .message .small {
+    text-align: center;
+  }
 }
