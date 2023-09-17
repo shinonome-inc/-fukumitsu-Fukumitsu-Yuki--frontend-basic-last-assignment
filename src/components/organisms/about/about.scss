@@ -2,8 +2,11 @@
 
 .about {
   .message {
-    background-color: $white_smoke;
-    color: $orange_bistre;
     text-align: center;
+    background-color: $white_smoke;
+
+    .message-title {
+      color: $orange_bistre;
+    }
   }
 }
