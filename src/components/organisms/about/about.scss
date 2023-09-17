@@ -1,23 +1,27 @@
 @use "../../variables" as *;
+
 .about {
-  padding: 100px 0px;
-  max-width: 960px;
+  .img-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
-  @media (max-width: $breakpoint-lg) {
-    padding: 40px 100px;
-  }
-  .img-wrapper .col-6 {
-    padding: 0;
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
-  .about-text {
+  .message {
+    text-align: center;
     background-color: $white_smoke;
-  }
-  .message .message-title {
-    text-align: center;
-    color: $orange_bistre;
-  }
-  .message .small {
-    text-align: center;
+
+    .message-title {
+      color: $orange_bistre;
+    }
   }
 }
