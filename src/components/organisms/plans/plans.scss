@@ -1,0 +1,25 @@
+@use "../../variables" as *;
+.plans {
+  .message .message-title {
+    text-align: center;
+    color: $orange_bistre;
+  }
+  .message .small {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .plan-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
+  .module {
+    display: flex;
+    justify-content: center;
+  }
+}
