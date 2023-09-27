@@ -1,5 +1,8 @@
 @use "../../variables" as *;
 .plans {
+  .message{
+    padding-top: 0px;
+  }
   .message .message-title {
     text-align: center;
     color: $orange_bistre;
@@ -13,9 +16,11 @@
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-bottom: 40px;
     @media (max-width: $breakpoint-md) {
       flex-direction: column;
       gap: 0px;
+      margin-bottom: 0px;
     }
   }
   .module {
