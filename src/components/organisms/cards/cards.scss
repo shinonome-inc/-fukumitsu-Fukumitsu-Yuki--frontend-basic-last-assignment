@@ -1,1 +1,10 @@
-
+@use "../../variables" as *;
+ .card-body {
+  padding: 0px;
+}
+.card {
+  padding: 0 0 100px 0;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0 0 40px 0;
+  }
+}
