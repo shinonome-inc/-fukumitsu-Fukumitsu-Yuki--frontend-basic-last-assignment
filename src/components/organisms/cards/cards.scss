@@ -1,0 +1,20 @@
+@use "../../variables" as *;
+.card-body {
+  padding: 0px;
+}
+.card {
+  padding: 0 0 100px 0;
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0 0 40px 0;
+  }
+}
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl) {
+  .card-text3 {
+    padding-bottom: 34px;
+  }
+}
+@media screen and(min-width:$breakpoint-lg)and(max-width:$breakpoint-xl) {
+  .card-text2 {
+    padding-bottom: 34px;
+  }
+}
