@@ -12,15 +12,19 @@
     justify-content: center;
     text-align: center;
   }
+  .plan{
+    margin-bottom: 0px;
+  }
   .plan-lists {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     margin-bottom: 40px;
     @media (max-width: $breakpoint-md) {
       flex-direction: column;
-      gap: 0px;
+      gap: 24px;
       margin-bottom: 0px;
+      padding: 35px;
     }
   }
   .module {
