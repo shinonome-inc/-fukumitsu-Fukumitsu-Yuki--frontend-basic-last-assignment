@@ -1,6 +1,11 @@
 @use "../../variables" as *;
 .plans {
-  .message{
+  padding:56px 0 100px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 56px 0 35px 0;
+  }
+
+  .message {
     padding-top: 0px;
   }
   .message .message-title {
@@ -12,7 +17,7 @@
     justify-content: center;
     text-align: center;
   }
-  .plan{
+  .plan {
     margin-bottom: 0px;
   }
   .plan-lists {
@@ -24,7 +29,7 @@
       flex-direction: column;
       gap: 24px;
       margin-bottom: 0px;
-      padding: 35px;
+      padding: 24px;
     }
   }
   .module {
