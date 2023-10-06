@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 .plans {
-  padding:56px 0 100px 0;
+  padding: 56px 0 100px 0;
   @media (max-width: $breakpoint-md) {
     padding: 56px 0 35px 0;
   }
@@ -32,7 +32,7 @@
       padding: 24px;
     }
   }
-  .module {
+  .button-wrapper {
     display: flex;
     justify-content: center;
   }
