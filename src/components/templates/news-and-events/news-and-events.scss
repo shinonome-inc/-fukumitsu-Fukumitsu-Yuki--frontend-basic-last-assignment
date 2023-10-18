@@ -1,0 +1,37 @@
+@use "../../variables" as *;
+.news-and-events {
+  padding: 56px;
+  background-color: $white_smoke;
+  @media screen and(max-width:$breakpoint-lg) {
+    padding: 56px 135px 0 136px;
+  }
+  .news {
+    margin-bottom: 70px;
+    .news-box {
+      background-color: $white;
+    }
+    .box-list {
+      padding: 13.4px;
+    }
+    .box-list h6 {
+      font-weight: 400;
+    }
+  }
+}
+@media screen and (min-width: $breakpoint-lg) {
+  .news-and-events {
+    display: flex;
+    justify-content: space-between;
+
+    .news {
+      width: 47%;
+    }
+
+    .events {
+      width: 47%;
+      .event-list .event-card > a .event-caption > h3 {
+        white-space: wrap;
+      }
+    }
+  }
+}
