@@ -1,25 +1,25 @@
 @use "../../variables" as *;
 .news-and-events {
-  padding: 56px;
+  padding: 56px 0px;
   background-color: $white_smoke;
-  @media screen and(max-width:$breakpoint-lg) {
-    padding: 56px 135px 0 136px;
-  }
+
   .news {
-    margin-bottom: 70px;
+    margin-bottom: 35px;
     .news-box {
       background-color: $white;
     }
     .box-list {
-      padding: 13.4px;
+      padding: 20px;
     }
     .box-list h6 {
+      margin-bottom: 0px;
       font-weight: 400;
     }
   }
 }
+
 @media screen and (min-width: $breakpoint-lg) {
-  .news-and-events {
+  .container {
     display: flex;
     justify-content: space-between;
 
@@ -31,6 +31,10 @@
       width: 47%;
       .event-list .event-card > a .event-caption > h3 {
         white-space: wrap;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+
       }
     }
   }
